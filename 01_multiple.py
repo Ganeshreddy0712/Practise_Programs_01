@@ -5,8 +5,9 @@ that is, n = mi for some integer i, and False otherwise.'''
 
 
 def is_multiple(n, m):
-    pass
-        
+ return True if m % n == 0 else False
+   
+       
 
 
 class TestIsMultiple(unittest.TestCase):
