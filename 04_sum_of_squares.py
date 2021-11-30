@@ -4,7 +4,13 @@ question_04 = ''' Python script that takes a positive integer n and returns the 
 
 
 def sum_squares(n):
-  pass
+    square=0
+    i=1
+    while i<n:
+        square=i*i+square
+        i=i+1
+    return square
+    pass
         
 
 
@@ -24,5 +30,5 @@ class TestSumSquares(unittest.TestCase):
   def test_05(self):
     self.assertEqual(sum_squares(100), 328350)
   
-if __name__ == '__main__':
+if _name_ == '_main_':
     unittest.main(verbosity=2)
