@@ -5,6 +5,10 @@ However, your function cannot use the multiplication, modulo, or division operat
 
 
 def is_even(k):
+    if k%2==0:
+        return True
+    else:
+        return False
     pass
         
 
@@ -26,5 +30,5 @@ class TestIsEven(unittest.TestCase):
         self.assertEqual(is_even(0),True) 
 
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     unittest.main(verbosity=2)
